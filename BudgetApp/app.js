@@ -305,7 +305,7 @@ var UIController = (function() {
             now = new Date();
             // var christmas = new Date(2017, 11, 25);
 
-            months = ['Siječanj', 'Veljača', 'Ožujak', 'Travanj', 'Svibanj', 'Lipanj', 'Srpanj', 'Kolovoz', 'Rujan', 'Listopad', 'Studeni', 'Prosinac'];
+            months = ['January', 'February', 'March', 'April ', 'May', 'June', 'July', 'August', 'September', 'October ', 'November', 'December'];
             month = now.getMonth();
 
             year = now.getFullYear();
