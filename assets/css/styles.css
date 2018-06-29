@@ -97,6 +97,7 @@ a.btn:hover {
 .header {
   background: #00BCD4;
   color: #fff;
+  height: 100vh;
 }
 .header a {
   color: #fff;
@@ -172,10 +173,10 @@ a.btn:hover {
   position: relative;
   font-size: 16px;
 }
-.header .profile {
+.header2 .profile {
   max-width: 800px;
   margin: 0 auto;
-  text-align: left;
+  text-align: justify;
 }
 .header .contact-info {
   background: #008fa1;
@@ -376,6 +377,92 @@ a.btn:hover {
   color: #8a8a8a;
 }
 .timeline .job-desc {
+  color: #666;
+}
+.timeline2 {
+  border-left: 3px solid #00BCD4;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  position: relative;
+  padding: 0 30px;
+  margin-left: 30px;
+}
+.timeline2 .item {
+  position: relative;
+  margin-bottom: 45px;
+}
+.timeline2 .item:last-child {
+  margin-bottom: 0;
+}
+.timeline2 .item:before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #fff;
+  border: 3px solid #00BCD4;
+}
+.timeline2 .item:after {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 6px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #00BCD4;
+  z-index: 10;
+}
+.timeline2 .work-place {
+  position: relative;
+}
+.timeline2 .location {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  color: #8a8a8a;
+}
+.timeline2 .location .fa {
+  margin-right: 5px;
+}
+.timeline2 .place {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.timeline2 .job-meta {
+  position: absolute;
+  left: -280px;
+  top: 0;
+}
+.timeline2 .job-meta .title {
+  font-size: 18px;
+  color: #00BCD4;
+}
+.timeline2 .job-meta .time {
+  color: #8a8a8a;
+}
+.timeline2 .job-desc {
   color: #666;
 }
 .education-section .item {
@@ -921,4 +1008,40 @@ a.btn:hover {
 }
 .config-panel .close .fa {
   color: #fff;
+}
+
+.header .intro {
+  /*TAGLINE UNDER NAME*/
+  font-weight: 400;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.header .intro h1 {
+  /*YOUR NAME*/
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.header .intro .title {
+  font-size: 2em;
+  margin: 0;
+}
+
+/*ARROW LINK*/
+#down-arrow {
+  /*position: absolute;
+  width: 100%;
+  margin-top: auto;*/
+  margin-top: 160px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#down-arrow a {
+  color: white;
 }
