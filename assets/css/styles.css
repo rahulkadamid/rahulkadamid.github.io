@@ -385,7 +385,7 @@ a.btn:hover {
   border-top-right-radius: 2px;
   position: relative;
   padding: 0 30px;
-  margin-left: 30px;
+  margin-left: 320px;
 }
 .timeline2 .item {
   position: relative;
@@ -452,7 +452,7 @@ a.btn:hover {
 }
 .timeline2 .job-meta {
   position: absolute;
-  left: -280px;
+  left: -360px;
   top: 0;
 }
 .timeline2 .job-meta .title {
