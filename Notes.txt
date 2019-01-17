@@ -1,0 +1,58 @@
+Course Link:
+https://www.udemy.com/junit-tutorial-for-beginners-with-java-examples
+----------------------------------------
+@Test
+
+assertEquals(expected, actual);
+
+assertNull(variable);
+assertNotNull(variable);
+
+assertTrue(booleanvariable);
+assertFalse(booleanvariable);
+
+assertArrayEquals(arrayvariable);
+
+@BeforeEach  // JUNIT4 - @Before
+@AfterEach	 // JUNIT4 - @After
+
+// Not in JUNIT4 
+class Testinfo, instance Testinfo info, info.getDisplayName();
+
+// static methods
+@BeforeAll  
+@AfterAll	
+----------------------------------------
+Exceptions:
+String str = null; 
+assertThrows(NullPointerException.class, () -> { str.length() });
+
+@DisplayName("...")
+
+@ParameterizedTest
+@ValueSource(string = {"Abc", "def", "jkd"})  
+// Also works with int double etc.
+void func(String s){
+	assertTrue(s.length() > 0);
+}
+
+Advance:
+@ParameterizedTest(name = "{0} toUpperCase is {1}")
+@CsvSource(value = {"abcd,ABCD", "abc,ABC", "'',''","abcdefgh,ABCDEFGH"})  
+void func(String word, String capitalize){
+	assertEquals(capitalize, word);
+}
+@ParameterizedTest(name = "{0} length is {1}")
+@CsvSource(value = {"abcd,4", "abc,3", "'',0","abcdefgh,7"})  
+void func(String word, int explength){
+	assertEquals(explength, word.length());
+}
+
+@RepeatedTest(10)
+
+assertTimeout(Duration.ofSeconds(5), ( ) -> { ... });
+
+@Disabled // JUNIT4 @Ignore
+
+@Nested
+
